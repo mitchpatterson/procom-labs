@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react';
 import { useAsync } from 'react-async';
 import Axios from 'axios';
 
-import { getAllEmployees } from '../Api/employees';
-
 export const useEmployeeData = () => {
     const url = 'https://procom-interview-employee-test.azurewebsites.net';
     const [employees, setEmployees] = useState<any[]>([]);
